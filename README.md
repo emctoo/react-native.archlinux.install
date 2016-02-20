@@ -22,6 +22,14 @@ add archlinuxcn source, install these:
 from aur:
 
 - android-platform 23_r02-1
+- android-support r23.1.1-1
+- android-support-repository r25-1
+
+For me, these version works, you may try them and please tell me if not working.
+To install them, you may need download PKGBUILD file, customize for specific satification.
+(Normally, I'd change version and, thanks for GFW, the download link)
+
+<TODO: add PKGBUILD patch>
 
 ## 配置npm
 
@@ -48,3 +56,16 @@ from aur:
 
 npm install -g react-native-cli --verbose
 react-native init demo --verbose
+
+
+to start the server:
+  react-native start
+
+run the installer:
+  react-native run-android
+
+set the dev setting to the form ip:8081, where ip is the address of your server
+
+## FAQ
+
+1. rm ./node_modules/react-deep-force-update/.babelrc and restart server
